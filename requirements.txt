@@ -1,0 +1,29 @@
+# Backend
+fastapi==0.115.12
+uvicorn==0.34.0
+pydantic==2.11.1
+python-dotenv==1.1.0
+
+# LangChain + vectorstore
+langchain==0.3.22
+langchain-core==0.3.49
+langchain-community==0.3.20
+langchain-text-splitters==0.3.7
+chromadb==0.6.3
+
+# Embeddings / HuggingFace
+sentence-transformers==4.0.1
+transformers==4.50.3
+torch==2.6.0
+safetensors==0.5.3
+huggingface-hub==0.30.0
+
+# OpenAI
+openai==1.69.0
+httpx==0.28.1
+
+# Utilidades
+numpy==2.2.4
+pandas==2.2.3
+tqdm==4.67.1
+tenacity==9.0.0

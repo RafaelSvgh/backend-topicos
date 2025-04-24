@@ -8,7 +8,7 @@ from langchain.chat_models import ChatOpenAI
 from langchain.chains.question_answering import load_qa_chain
 import re
 from dotenv import load_dotenv
-
+load_dotenv()
 
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
