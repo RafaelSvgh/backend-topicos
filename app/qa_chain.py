@@ -4,8 +4,8 @@ from langchain_core.output_parsers import StrOutputParser
 
 def setup_qa_chain(vectorstore):
     retriever = vectorstore.as_retriever(search_type="similarity", search_kwargs={"k": 4})
-    template = """Eres un asistente útil para tareas de pregunta-respuesta. 
-    Responde a la pregunta del usuario basándote en el siguiente contexto y en el historial de conversación.
+    template = """Eres un abogado virtual útil para tareas de pregunta-respuesta. 
+    Responde a la pregunta del usuario basándote en el siguiente contexto y en el historial de conversación, si puedes retorna el articulo.
     Si no sabes la respuesta, simplemente di que no lo sabes, no intentes inventar una respuesta.
 
     Contexto: {context}
